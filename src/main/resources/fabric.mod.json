@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "allarrowsinfinityfix",
-  "version": "1.8.7",
+  "version": "1.9",
 
   "name": "All Arrows Infinity Fix",
   "description": "This mod allows the Infinity enchantment to work with all arrows",
@@ -28,7 +28,7 @@
 
   "depends": {
     "fabricloader": ">=0.11.3",
-    "minecraft": ">=1.21.3 <=1.21.11",
+    "minecraft": ">=26.1 <=26.2",
     "java": ">=21"
   },
   "suggests": {
