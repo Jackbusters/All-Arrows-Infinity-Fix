@@ -23,9 +23,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(EnchantmentHelper.class)
 public class ArrowsFixAllArrows {
     @Inject(method = "processAmmoUse", at = @At("HEAD"), cancellable = true)
-    private static void hasInfiniteInjection(ServerLevel pLevel, ItemStack pWeapon, ItemStack pAmmo, int pCount, CallbackInfoReturnable<Integer> cir){
-        Holder<Enchantment> INFINITY = pLevel.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.INFINITY);
-        boolean hasInfinity = EnchantmentHelper.getItemEnchantmentLevel(INFINITY, pWeapon) > 0;
+    private static void hasInfiniteInjection(ServerLevel serverLevel, ItemStack weapon, ItemStack ammo, int amount, CallbackInfoReturnable<Integer> cir){
+        Holder<Enchantment> INFINITY = serverLevel.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.INFINITY);
+        boolean hasInfinity = EnchantmentHelper.getItemEnchantmentLevel(INFINITY, weapon) > 0;
         if (hasInfinity)
             cir.setReturnValue(0);
     }

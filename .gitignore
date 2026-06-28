@@ -22,7 +22,5 @@ eclipse
 run
 
 # Files from Forge MDK
+forge_README.txt
 forge*changelog.txt
-
-# Datapack ZIP
-All Arrows Infinity Fix.zip

@@ -22,8 +22,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(ArrowItem.class)
 public class ArrowsFixForge {
     @Inject(at = @At("HEAD"), method = "isInfinite", cancellable = true, remap=false)
-    public void isInfinite(ItemStack stack, ItemStack bow, LivingEntity livingEntity, CallbackInfoReturnable<Boolean> cir) {
-        Holder<Enchantment> INFINITY = livingEntity.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.INFINITY);
+    public void isInfinite(ItemStack stack, ItemStack bow, LivingEntity owner, CallbackInfoReturnable<Boolean> cir) {
+        Holder<Enchantment> INFINITY = owner.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.INFINITY);
         boolean hasInfinity = EnchantmentHelper.getItemEnchantmentLevel(INFINITY, bow) > 0;
         if (hasInfinity)
             cir.setReturnValue(true);
