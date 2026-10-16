@@ -14,7 +14,7 @@ issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/all-arrows-infinit
 
 [[mods]]
 modId="allarrowsinfinityfix"
-version="1.9"
+version="1.10"
 displayName="All Arrows Infinity Fix"
 #updateJSONURL="https://example.com/updates.json" #optional
 displayURL="https://www.curseforge.com/minecraft/mc-mods/all-arrows-infinity-fix" #optional
@@ -35,7 +35,7 @@ side="BOTH"
 [[dependencies.allarrowsinfinityfix]] #recommended
 modId="minecraft"
 mandatory=true
-versionRange="[26.1,26.2]"
+versionRange="[26.1,26.3]"
 ordering="NONE"
 side="BOTH"
 

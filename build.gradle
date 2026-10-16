@@ -9,7 +9,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '[7.0.17,8)'
 }
 
-version = '1.9'
+version = '1.10'
 group = 'com.jackbusters.allarrowsinfinityfix'
 
 // Mojang ships Java 25 to end users in 26.1+, so your mod should target Java 25.
@@ -52,7 +52,7 @@ repositories {
 }
 
 dependencies {
-    implementation minecraft.dependency('net.minecraftforge:forge:26.2-65.0.1')
+    implementation minecraft.dependency('net.minecraftforge:forge:26.3-66.0.13')
     annotationProcessor 'net.minecraftforge:eventbus-validator:7.0.1'
 }
 
