@@ -2,7 +2,7 @@
   "required": true,
   "minVersion": "0.8",
   "package": "com.jackbusters.allarrowsinfinityfix.mixins",
-  "compatibilityLevel": "JAVA_21",
+  "compatibilityLevel": "JAVA_25",
   "refmap": "allarrowsinfinityfix.mixins.refmap.json",
   "mixins": [
     "ArrowsFixAllArrows",
